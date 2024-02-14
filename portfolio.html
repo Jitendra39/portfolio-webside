@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Site</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Protest+Strike&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.mainContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    
+}
+
+.menu-icon {
+    display: none;
+    
+}
+
+.menu-links {
+    padding: 1.2rem 2rem;
+    display: inline-block;
+    font-size: 1rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: color .3s;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+    font-weight: 700;
+    letter-spacing: 2;
+}
+
+.menu-links a:hover{
+
+    text-decoration: none;
+    color: #333;
+   color: #b08ef8;
+    margin-right: 20px;
+    font-weight: 700;
+    letter-spacing: 2;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-content i {
+    font-size: 34px;
+    margin-right: 20px;
+
+}
+
+.mainBody {
+    padding: 20px;
+}
+
+.homepage {
+    color: #fff;
+    background: linear-gradient(to right, rgba(245, 245, 245, .8), rgba(245, 245, 245, .8)), url("https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg");
+    /* background: linear-gradient(to right, #ADD8E6, #4682B4), url("common-bg.svg"); */
+    background-position: center;
+    height: 100vh;
+    min-height: 40rem;
+    max-height: 70%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: hidden;
+
+}
+
+.homepage-heading {
+
+   
+    margin-top: 11%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #111;
+    font-weight: bold;
+    font-family: "Protest Strike", sans-serif;
+    /* font-family: "Fjalla One", sans-serif; */
+}
+
+.discription {
+  
+    width: 80%;
+   max-width: 600px; 
+   color: #757171ad;
+   font-size: 1.2rem;
+   text-align: center;
+   line-height: 1.6;
+   margin-top: 3%;
+   padding: 0 20px;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .discription {
+        width: 90%;
+        margin: 3% auto;
+    }
+}
+
+.discription p {
+    text-align: center;
+}
+
+.Abutton {
+    margin-top: 15%;
+    padding: 1rem 6rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #7843e9;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .15);
+    transition: transform .3s;
+}
+
+.Abutton:hover{
+  
+    background-color: aquamarine;
+    color: black;
+}
+
+.socialmedia {
+    max-width: 5%;
+    max-height: 39%;
+
+    font-size: 40px;
+   background-color: white;
+   padding: 15px;
+   border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
+    margin-top: 20px; 
+    transform: translateY(-54%);
+}
+
+
+
+@media screen and (max-width: 850px) { 
+    
+ 
+    .socialmedia{
+        visibility: hidden;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    
+  
+    
+.homepage {
+    color: #fff;
+    /* background: linear-gradient(to right, rgba(245, 245, 245, .8), rgba(245, 245, 245, .8)), url("common-bg.svg"); */
+    background: linear-gradient(to right, #ADD8E6, #4682B4), url("common-bg.svg");
+    background-position: center;
+    height: 100vh;
+    min-height: 80rem;
+    max-height: 100%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+}
+.linkedin {
+    margin-right: 10px;
+}
+
+.linkedin img {
+    height: auto;
+}
+
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="header">
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="header-content">
+                <i class="fas fa-user"></i>
+                <h3>Jitendra Choudhari</h3>
+            </div>
+            <div class="menu-links">
+                <a href="#">Home</a>
+                <a href="https://www.linkedin.com/in/jitendra-choudhari-4236b3287">About</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact</a>
+            </div>
+           
+        </div>
+
+        <section class="homepage">
+
+      
+            <div class="homepage-heading">
+                <h1>HELLO,I'M AM JITENDRA CHOUDHARI</h1>
+            </div>
+            <div class="discription">
+                <p>I'm a frontend web developer proficient in HTML and CSS with a growing knowledge of C and C++. I'm committed to crafting engaging user experiences that drive project success.</p>
+
+            </div>
+            <a href="https://www.linkedin.com/in/jitendra-choudhari-4236b3287">
+            <button class="Abutton">Projects</button>
+        </div>
+
+        <div class="socialmedia">
+            <div class="linkdin">
+                <a href="https://www.linkedin.com/in/jitendra-choudhari-4236b3287" class="linkdinlink" target="_blank">
+                    <img src="https://d33wubrfki0l68.cloudfront.net/d8e6e1e636531e28274a1b8b6d947b817f6145bd/d42d3/assets/svg/linkedin-dark.svg" alt="Jitendra Choudhari linkdin Profile" >
+                </a>
+            </div>
+            <div class="github">
+                <a href="https://github.com/Jitendra39" class="gitlink" target="_blank">
+                    <img src="https://d33wubrfki0l68.cloudfront.net/38469cf88d038b6ba3322c9fcb93a8f7167df4b9/cb0b9/assets/svg/github-dark.svg"  alt="Jitendra39 ">
+                </a>
+            </div>
+            <div class="twitter">
+                <a href="https://www.linkedin.com/in/jitendra-choudhari-4236b3287" class="twitterlink" target="_blank">
+                    <img src="https://d33wubrfki0l68.cloudfront.net/ba3ef9fd9d500c55ba265adae6087ba71e05f5d9/d0067/assets/svg/twitter-dark.svg"  alt="Jitendra39">
+                </a>
+            </div>
+            <div class="youtube">
+                <a href="https://www.linkedin.com/in/jitendra-choudhari-4236b3287" class="youtubelink" target="_blank">
+                    <img src="https://d33wubrfki0l68.cloudfront.net/7c95be3350552a5e9f2fc47f1bdbac118ea4dcee/f7a5e/assets/svg/yt-dark.svg"  alt="Jitendra39">
+                </a>
+            </div>
+
+            <div class="insta">
+                <a href="https://www.instagram.com/harsh_choudhari_official/" class="instalink" target="_blank">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+            </div>
+
+            
+        </div>
+        </section>
+      
+    </div>
+</body>
+</html>
